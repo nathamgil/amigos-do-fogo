@@ -4,60 +4,49 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Boutique e guia de cortes · Amigos do Fogo</title>
-<meta name="description" content="Cortes especiais, defumados artesanais, temperos e bebidas. Monte seu kit de churrasco e aprenda onde fica cada corte do boi.">
+<meta name="description" content="Cortes especiais, defumados artesanais, temperos e bebidas. Toque no corte do boi, veja a ficha e monte seu kit de churrasco no WhatsApp.">
 <meta name="theme-color" content="#15110E">
 <link rel="icon" href="fotos/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/estilo.css?v=20261112182637">
+<link rel="stylesheet" href="assets/site.css?v=20261112192853">
 </head>
 <body>
 <header class="topo">
-  <div class="embrulho">
-    <a class="marca" href="index.html"><img src="fotos/logo.jpg" alt=""><b>Amigos do Fogo</b></a>
-    <nav aria-label="Principal">
-      <a href="boutique.html" aria-current="page">Boutique</a>
-      <a href="index.html#almoco">Almoço</a>
-      <a href="#guia">Guia de cortes</a>
-    </nav>
-    <a class="bt bt-brasa" href="index.html#orcamento">Orçar buffet</a>
-  </div>
+  <a class="marca" href="index.html"><img src="fotos/logo.jpg" alt=""><b>Amigos do Fogo</b></a>
+  <nav aria-label="Principal">
+    <a href="boutique.html" aria-current="page">Boutique</a>
+    <a href="index.html#almoco">Almoço</a>
+    <a href="#guia">Guia de cortes</a>
+  </nav>
+  <a class="bt bt-brasa" href="index.html#orcamento">Orçar buffet</a>
 </header>
 
 <main>
   <section class="bout-cab">
     <div class="embrulho">
-      <span class="rotulo">Boutique de carnes</span>
-      <h1>Escolhe no balcão. Leva o fogo pra casa.</h1>
-      <p>Cortes especiais, defumados artesanais, temperos e bebidas. Marque o que quer no seu kit: a lista sai pronta no WhatsApp e a casa responde com o que tem na semana.</p>
+      <h1>Escolhe o corte.<br><em>Leva o fogo pra casa.</em></h1>
+      <p>Toque numa peça do boi: abre a ficha do corte e você põe no kit. A lista sai pronta no WhatsApp e a casa responde com o que tem na semana.</p>
     </div>
   </section>
 
-  <section class="secao" style="padding-top:30px">
-    <div class="embrulho vitrine" id="vitrine"></div>
+  <section class="guia" id="guia" aria-label="Guia de cortes">
+    <div class="embrulho guia-grade">
+      <div>
+        <svg class="boi boi-guia" id="boi" viewBox="0 10 640 340" role="group" aria-label="Desenho do boi dividido em cortes"></svg>
+        <div class="cortes-lista" id="cortes-lista"></div>
+      </div>
+      <div class="ficha" id="corte-info" aria-live="polite"></div>
+    </div>
   </section>
 
-  <div class="corredor" aria-hidden="true"><p data-corre="-0.35">CUPIM · ANCHO · PICANHA · COSTELA · FRALDINHA · <b>CHORIZO</b> · MAMINHA · </p></div>
-
-  <section class="secao guia" id="guia">
+  <section class="balcao" aria-labelledby="t-balcao">
     <div class="embrulho">
-      <div class="secao-topo">
-        <div><span class="rotulo">Vídeo-aula em uma tela</span><h2>Guia de cortes</h2></div>
-        <p>Toque numa parte do boi pra saber onde fica o corte, como vai pro fogo e o ponto certo.</p>
-      </div>
-      <div class="guia-grade">
-        <div>
-          <svg class="boi" id="boi" viewBox="40 40 560 290" role="group" aria-label="Desenho do boi dividido em cortes">
-            <defs><clipPath id="corpo"><path id="silhueta" d="M60,128 L92,96 L112,108 L150,104 L178,70 L215,58 L252,66 L470,64 L530,72 L572,92 L580,150 L572,210 L566,312 L540,312 L532,236 L500,262 L440,272 L262,276 L246,268 L236,312 L208,312 L200,256 L168,232 L140,196 L104,170 L72,170 L50,150 Z"/></clipPath></defs>
-            <g clip-path="url(#corpo)" id="zonas"></g>
-            <use href="#silhueta" class="contorno"/>
-          </svg>
-          <div class="cortes-lista" id="cortes-lista"></div>
-        </div>
-        <div class="corte-info" id="corte-info" aria-live="polite"></div>
-      </div>
+      <h2 id="t-balcao">No balcão da boutique</h2>
+      <p class="balcao-lede">Cortes especiais, defumados, temperos e bebidas. Arrasta pro lado e marca o que quer no kit.</p>
     </div>
+    <div class="vitrine" id="vitrine"></div>
   </section>
 </main>
 
@@ -70,13 +59,11 @@
 </div>
 
 <footer class="rodape">
-  <div class="embrulho">
-    <p class="slab">Muito além do churrasco.</p>
-    <p>Amigos do Fogo · Salvador · Bahia · <a href="https://instagram.com/amigosfogo" target="_blank" rel="noopener">@amigosfogo</a></p>
-    <p class="mini"><a href="index.html">Início</a> · <a href="admin.html">Painel</a> · Site de demonstração feito pela Zync.</p>
-  </div>
+  <p class="slab">Muito além do churrasco.</p>
+  <p>Amigos do Fogo · Salvador · Bahia · <a href="https://instagram.com/amigosfogo" target="_blank" rel="noopener">@amigosfogo</a> · <a href="index.html">Início</a> · <a href="admin.html">Painel</a></p>
+  <p class="mini">Site de demonstração feito pela Zync.</p>
 </footer>
-<script src="assets/dados.js?v=20261112182637"></script>
-<script src="assets/site.js?v=20261112182637"></script>
+<script src="assets/dados.js?v=20261112192853"></script>
+<script src="assets/site.js?v=20261112192853"></script>
 </body>
 </html>
