@@ -1,0 +1,52 @@
+/* Painel — Amigos do Fogo. Claro e de alto contraste (uso no balcão, no celular). */
+body.adm { background: var(--osso); color: var(--tinta); }
+body.adm input, body.adm select, body.adm textarea { background: #fff; color: var(--tinta); border-color: var(--tinta2); }
+body.adm input[type=date], body.adm input[type=time] { color-scheme: light; }
+body.adm .bt { border-color: var(--tinta); color: var(--tinta); }
+body.adm .bt:hover { background: var(--tinta); color: var(--osso); }
+body.adm .bt-tinta { background: var(--tinta); color: var(--osso); }
+body.adm .bt-tinta:hover { background: var(--brasa-esc); border-color: var(--brasa-esc); color: #fff; }
+.login { min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; background: var(--carvao); }
+.login-caixa { width: min(100%, 420px); background: var(--osso); border-radius: 8px; padding: 26px; display: grid; gap: 10px; }
+.login-caixa img { border-radius: 10px; }
+.login-caixa h1 { font-size: 34px; }
+.login-caixa label { font-weight: 700; }
+.credencial { background: var(--kraft); border: 2px dashed var(--tinta2); padding: 10px 12px; }
+.erro { color: #A3260B; }
+.adm-topo { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; gap: 10px; padding: 10px 16px; background: var(--carvao); color: var(--osso); }
+.adm-topo img { border-radius: 8px; }
+.adm-topo b { font: 400 20px 'Alfa Slab One', serif; margin-right: auto; }
+body.adm .adm-topo .bt { border-color: var(--osso); color: var(--osso); }
+.adm-main { padding: 24px 0 120px; }
+.aba h2 { font-size: clamp(32px, 6vw, 48px); margin-bottom: 8px; }
+.aba > p { color: var(--tinta2); }
+.filtros { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 18px; }
+.filtros button { min-height: 44px; padding: 8px 14px; border: 2px solid var(--tinta); border-radius: 99px; background: #fff; font: 600 16px 'Barlow', sans-serif; cursor: pointer; color: var(--tinta); }
+.filtros button[aria-pressed=true] { background: var(--tinta); color: var(--osso); }
+.resumo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 12px; margin: 16px 0; }
+.resumo div { background: #fff; border: 2px solid var(--tinta); border-radius: 8px; padding: 12px; }
+.resumo b { display: block; font: 400 30px 'Alfa Slab One', serif; }
+.ped { background: #fff; border: 2px solid var(--tinta); border-left: 10px solid var(--brasa); border-radius: 8px; padding: 16px; margin-bottom: 14px; }
+.ped[data-st=respondido] { border-left-color: #1F5FA8; }
+.ped[data-st=fechado] { border-left-color: #1C7A3C; }
+.ped[data-st=perdido] { border-left-color: #8C8279; }
+.ped h3 { font: 700 22px/1.2 'Barlow', sans-serif; margin-bottom: 4px; }
+.ped .meta { color: var(--tinta2); margin: 0 0 8px; }
+.ped ul { margin: 6px 0 10px; padding-left: 20px; }
+.ped .linha-bt, .linha-bt { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.ped select { width: auto; min-height: 44px; }
+.st { display: inline-block; font-size: 14px; font-weight: 700; padding: 2px 10px; border-radius: 99px; background: var(--brasa); color: var(--carvao); margin-right: 8px; vertical-align: middle; }
+.lista-adm { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.lista-adm li { background: #fff; border: 2px solid var(--tinta); border-radius: 8px; padding: 14px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 14px; align-items: center; }
+.lista-adm li > * { min-width: 0; }
+.lista-adm li.off { opacity: .6; }
+.lista-adm small { display: block; color: var(--tinta2); font-size: 16px; }
+.cartao { background: #fff; border: 2px solid var(--tinta); border-radius: 8px; padding: 16px; margin-top: 14px; }
+.campos label { color: var(--tinta); }
+.abas { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: var(--carvao); }
+.abas button { min-height: 62px; border: 0; background: none; color: var(--osso); font: 600 16px 'Barlow', sans-serif; cursor: pointer; }
+.abas button[aria-current] { background: var(--brasa); color: var(--carvao); }
+.badge { display: inline-block; margin-left: 4px; min-width: 22px; padding: 1px 6px; border-radius: 99px; background: var(--osso); color: var(--carvao); font-size: 14px; }
+.toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); background: var(--carvao); color: var(--osso); padding: 12px 18px; border-radius: 8px; font-weight: 700; z-index: 50; }
+
+[hidden]{display:none!important}

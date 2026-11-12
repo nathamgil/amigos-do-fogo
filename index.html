@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amigos do Fogo · boutique de carnes e buffet em Salvador</title>
+<meta name="description" content="Boutique de carnes, cortes especiais e defumados artesanais, almoço e buffet para eventos e confraternizações em Salvador. Peça o orçamento do buffet no WhatsApp.">
+<meta name="theme-color" content="#15110E">
+<link rel="icon" href="fotos/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261112182637">
+</head>
+<body>
+<div class="aviso-demo" id="aviso-demo" hidden>Demonstração: o WhatsApp ainda é um número de exemplo.</div>
+<header class="topo">
+  <div class="embrulho">
+    <a class="marca" href="index.html"><img src="fotos/logo.jpg" alt=""><b>Amigos do Fogo</b></a>
+    <nav aria-label="Principal">
+      <a href="boutique.html">Boutique</a>
+      <a href="#almoco">Almoço</a>
+      <a href="boutique.html#guia">Guia de cortes</a>
+    </nav>
+    <a class="bt bt-brasa" href="#orcamento">Orçar buffet</a>
+  </div>
+</header>
+
+<main>
+<section class="capa">
+  <div class="embrulho capa-grade">
+    <div>
+      <span class="rotulo">Boutique de carnes · Buffet · Salvador</span>
+      <h1>Aqui, a carne é coisa séria. <em>O fogo também.</em></h1>
+      <p class="lede">Cortes especiais e defumados artesanais no balcão, almoço na casa e buffet pro seu evento. Mas a resenha… essa é obrigatória.</p>
+      <div class="capa-acoes">
+        <a class="bt bt-brasa" href="#orcamento">Pedir orçamento do buffet</a>
+        <a class="bt" href="boutique.html">Ver os cortes</a>
+      </div>
+    </div>
+    <figure class="capa-foto">
+      <img src="fotos/picanha-na-grelha.jpg" alt="Corte grosso de carne bovina selando na grelha, com a capa de gordura dourada e a brasa embaixo" width="360" height="490">
+      <div class="etiqueta" aria-hidden="true"><small>Corte · Fogo · Ponto</small><b>Padrão Amigos do Fogo</b></div>
+    </figure>
+  </div>
+</section>
+
+<div class="corredor" aria-hidden="true"><p data-corre="-0.4">A CARNE É COISA SÉRIA · <b>O FOGO</b> É LEVADO A SÉRIO · A RESENHA É <b>OBRIGATÓRIA</b> · </p></div>
+
+<section class="secao">
+  <div class="embrulho">
+    <div class="secao-topo">
+      <div><span class="rotulo">Muito além do churrasco</span><h2>Três jeitos de chegar no fogo</h2></div>
+      <p>Na boutique você encontra cortes especiais, temperos, bebidas e muito mais. E quando o evento é seu, o buffet é com a gente.</p>
+    </div>
+    <ul class="frentes">
+      <li><a class="frente surge" href="boutique.html"><span class="n">01</span><div><h3>Boutique</h3><p>Cortes especiais, defumados artesanais, kits, temperos e bebidas.</p></div><img src="fotos/boutique-cortes.jpg" alt="" loading="lazy"></a></li>
+      <li><a class="frente surge" href="#almoco"><span class="n">02</span><div><h3>Almoço</h3><p>Costela, carreteiro, tropeiro, hambúrguer e a baguete de pulled pork.</p></div><img src="fotos/almoco-domingo.jpg" alt="" loading="lazy"></a></li>
+      <li><a class="frente surge" href="#orcamento"><span class="n">03</span><div><h3>Buffet pro seu evento</h3><p>Aniversário, firma, formatura, família. Monte o pedido e mande no WhatsApp.</p></div><img src="fotos/costela-defumada.jpg" alt="" loading="lazy"></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao historia">
+  <div class="embrulho hist-grade">
+    <img class="surge" src="fotos/resenha.jpg" alt="Quatro pessoas sorrindo lado a lado na frente da casa, uma delas com a camisa do Amigos do Fogo" loading="lazy" width="360" height="640">
+    <div>
+      <span class="rotulo">Quem somos</span>
+      <p class="frase" id="frase"><span>Aqui, a carne é coisa séria.</span><span>O fogo é levado a sério.</span><span>Mas a resenha…</span><span>essa é obrigatória!</span></p>
+      <p>Amigos do Fogo é boutique de carnes, cozinha de brasa e buffet. O nome já diz: carne boa, fogo bem feito e gente em volta.</p>
+      <p class="fonte">Frases da própria casa, nas legendas do @amigosfogo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORÇAMENTO ============ -->
+<section class="secao orcamento" id="orcamento">
+  <div class="embrulho">
+    <div class="secao-topo">
+      <div><span class="rotulo">Buffet para eventos e confraternizações</span><h2>Orçamento do buffet em 1 minuto</h2></div>
+      <p>Preencha o que já sabe. A comanda ao lado vai se montando; no fim ela sai pronta no WhatsApp da casa.</p>
+    </div>
+    <div class="orc-grade">
+      <form id="form-orc" novalidate>
+        <fieldset class="passo"><legend><span>1</span>Quando é?</legend>
+          <div class="campos">
+            <div><label for="o-data">Data do evento</label><input id="o-data" type="date" required></div>
+            <div><label for="o-hora">Horário</label><input id="o-hora" type="time" value="12:00"></div>
+          </div>
+        </fieldset>
+        <fieldset class="passo"><legend><span>2</span>Quantas pessoas?</legend>
+          <div class="campos">
+            <div><label for="o-adultos">Adultos</label><input id="o-adultos" type="number" min="1" max="2000" value="30" inputmode="numeric"></div>
+            <div><label for="o-criancas">Crianças</label><input id="o-criancas" type="number" min="0" max="1000" value="0" inputmode="numeric"></div>
+          </div>
+          <div class="estimativa" aria-live="polite"><b id="o-kg">12 kg</b> de carne, mais ou menos<small>Conta de bolso do site: 400 g por adulto, metade por criança. A casa confirma a quantidade certa.</small></div>
+        </fieldset>
+        <fieldset class="passo"><legend><span>3</span>Que evento?</legend>
+          <div class="chips" id="o-tipos"></div>
+        </fieldset>
+        <fieldset class="passo"><legend><span>4</span>O que não pode faltar?</legend>
+          <div id="o-itens"></div>
+        </fieldset>
+        <fieldset class="passo"><legend><span>5</span>Onde?</legend>
+          <div class="campos">
+            <div style="grid-column:1/-1"><label for="o-local">Local ou bairro</label><input id="o-local" placeholder="Ex.: salão do condomínio, Pituba"></div>
+          </div>
+          <p class="rot" style="margin-top:14px">Precisa de churrasqueiro no local?</p>
+          <div class="chips" id="o-churras">
+            <label><input type="radio" name="churras" value="sim"><span>Sim</span></label>
+            <label><input type="radio" name="churras" value="nao"><span>Não, vou retirar</span></label>
+            <label><input type="radio" name="churras" value="naosei" checked><span>Ainda não sei</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="passo"><legend><span>6</span>Quem tá pedindo?</legend>
+          <div class="campos">
+            <div><label for="o-nome">Seu nome</label><input id="o-nome" autocomplete="name"></div>
+            <div><label for="o-tel">Seu WhatsApp</label><input id="o-tel" type="tel" autocomplete="tel" placeholder="(71) 9…"></div>
+            <div style="grid-column:1/-1"><label for="o-obs">Mais alguma coisa?</label><textarea id="o-obs" placeholder="Ex.: 40 anos do meu marido, quero costela no fogo de chão"></textarea></div>
+          </div>
+        </fieldset>
+        <p class="erro" id="o-erro" role="alert"></p>
+      </form>
+      <aside class="comanda" aria-label="Resumo do orçamento">
+        <h3>Comanda</h3>
+        <pre id="o-previa"></pre>
+        <button class="bt bt-tinta" type="submit" form="form-orc">Mandar no WhatsApp</button>
+        <p class="nota">Sem compromisso e sem preço aqui no site: o valor vem na resposta, de acordo com o cardápio e o número de pessoas.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="corredor" aria-hidden="true"><p data-corre="0.35">PEGA ESSE MARMOREIO, PAI · <b>FOGO DE CHÃO</b> E PALAVRA FIRME · DEFUMADOS ARTESANAIS · </p></div>
+
+<!-- ============ almoço ============ -->
+<section class="secao" id="almoco">
+  <div class="embrulho">
+    <div class="secao-topo">
+      <div><span class="rotulo">Almoço e lanche na casa</span><h2>Domingo é dia de costela</h2></div>
+      <p>Costela suculenta, arroz carreteiro e aquele feijão tropeiro. E pra quem quer lanche: hambúrguer caprichado e baguete de pulled pork.</p>
+    </div>
+    <div class="almoco-grade" id="almoco-grade"></div>
+    <div class="domingo"><p id="almoco-horario"></p><a class="bt bt-brasa" id="almoco-zap" href="#" target="_blank" rel="noopener">Perguntar o almoço de hoje</a></div>
+  </div>
+</section>
+
+<section class="depo">
+  <div class="embrulho">
+    <blockquote class="surge">É <em>fogo de chão</em> e palavra firme.</blockquote>
+    <p>Cliente, nos Feedbacks do @amigosfogo</p>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="embrulho">
+    <p class="slab">Chama os amigos. <span style="color:var(--brasa)">A gente cuida do fogo.</span></p>
+    <p>Amigos do Fogo · <span id="rod-cidade">Salvador · Bahia</span> · <a href="https://instagram.com/amigosfogo" target="_blank" rel="noopener">@amigosfogo</a></p>
+    <p class="mini"><a href="boutique.html">Boutique e guia de cortes</a> · <a href="admin.html">Painel</a> · Site de demonstração feito pela Zync.</p>
+  </div>
+</footer>
+<script src="assets/dados.js?v=20261112182637"></script>
+<script src="assets/site.js?v=20261112182637"></script>
+</body>
+</html>
